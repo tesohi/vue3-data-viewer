@@ -4,16 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
     "highcharts-vue": "^2.0.1",
     "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",
-    "vue": "^3.2.13",
-    "vue3-easy-data-table": "^1.5.47"
+    "vue": "^3.2.13"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",

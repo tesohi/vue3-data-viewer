@@ -11,7 +11,7 @@
       />
     </div>
     <div class="data-view">
-      <TableView />
+      <TableView :data="data" />
     </div>
   </div>
 
@@ -21,7 +21,7 @@
 <script lang="ts" setup>
 import ChartView from "@/components/chart/ChartView.vue";
 import TableView from "@/components/table/TableView.vue";
-import SimpleLoader from "@/components/ui/SimpleLoader.vue";
+import SimpleLoader from "@/components/ui/loader/SimpleLoader.vue";
 import { onMounted } from "vue";
 import { storeToRefs } from "pinia";
 import { useDataStore } from "@/stores/DataStore";
@@ -46,8 +46,7 @@ onMounted(() => {
 .data-view {
   min-width: 300px;
   min-height: 400px;
-  flex: 1 0 500px;
+  max-height: 500px;
   border-radius: 10px;
-  overflow: hidden;
 }
 </style>

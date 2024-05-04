@@ -3,7 +3,7 @@ import { Options } from "highcharts";
 export const darkLineChart: Options = {
   chart: {
     type: "line",
-    backgroundColor: "#2b2b2b",
+    backgroundColor: "#252424",
   },
   title: {
     style: {

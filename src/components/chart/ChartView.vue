@@ -22,7 +22,6 @@ const props = defineProps<{
 const baseOptions = {
   chart: {
     type: "line",
-    height: "90%",
     borderRadius: 10,
   },
 
@@ -52,4 +51,8 @@ const baseOptions = {
 const computedOptions = computed(() => merge({}, baseOptions, darkLineChart));
 </script>
 
-<style scoped></style>
+<style scoped>
+.chart {
+  max-height: 100%;
+}
+</style>

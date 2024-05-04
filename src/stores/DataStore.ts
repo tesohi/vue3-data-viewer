@@ -29,7 +29,7 @@ export const useDataStore = defineStore("data", () => {
       data.value = jsonData.data;
       hasData.value = jsonData.has_data;
     } catch (error) {
-      alert(error);
+      console.log(error);
     } finally {
       isLoading.value = false;
     }
