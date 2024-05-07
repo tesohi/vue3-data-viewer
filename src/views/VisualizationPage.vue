@@ -23,14 +23,13 @@ import ChartView from "@/components/chart/ChartView.vue";
 import TableView from "@/components/table/TableView.vue";
 import SimpleLoader from "@/components/ui/loader/SimpleLoader.vue";
 import { onMounted } from "vue";
-import { storeToRefs } from "pinia";
-import { useDataStore } from "@/stores/DataStore";
+import { useDataStore, useDataStoreRefs } from "@/stores/DataStore";
 
-const dataStore = useDataStore();
-const { data, hasData, isLoading } = storeToRefs(dataStore);
+const { fetchData } = useDataStore();
+const { data, hasData, isLoading } = useDataStoreRefs();
 
 onMounted(() => {
-  dataStore.fetchData();
+  fetchData();
 });
 </script>
 

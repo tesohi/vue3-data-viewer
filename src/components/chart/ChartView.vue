@@ -11,7 +11,7 @@ import { darkLineChart } from "./chartConfigurations";
 import merge from "lodash-es/merge";
 
 const props = defineProps<{
-  data: DataSet[] | [];
+  data: DataSet[];
   title?: string;
   xAxisTitle?: string;
   xAxisType?: string;

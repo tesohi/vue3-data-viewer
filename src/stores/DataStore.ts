@@ -1,4 +1,4 @@
-import { defineStore } from "pinia";
+import { defineStore, storeToRefs } from "pinia";
 import { Ref, ref } from "vue";
 
 export type DataPoint = [number, number];
@@ -37,3 +37,5 @@ export const useDataStore = defineStore("data", () => {
 
   return { data, hasData, isLoading, fetchData };
 });
+
+export const useDataStoreRefs = () => storeToRefs(useDataStore());
