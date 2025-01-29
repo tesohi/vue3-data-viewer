@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lint": "eslint --ext .ts,.vue src",
+    "lint:fix": "eslint --ext .ts,.vue src --fix",
+    "prettier": "prettier --check src",
+    "prettier:fix": "prettier --write src"
   },
   "dependencies": {
     "core-js": "^3.8.3",
